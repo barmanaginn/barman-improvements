@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block entete %}{% trans "Improvements" %}{% endblock %}
+{% block navbar %}
+<ul>
+	<li><a href="#first">{% trans "Improvements" %}</a></li>
+</ul>
+{% endblock %}
+{% block content %}
+<section id="first" class="main">
+	<header class="major">
+		<h2>{% trans "Improvements" %}</h2>
+	</header>
+	<div class="table-wrapper">
+		<table>
+			<thead>
+				<tr>
+					<th>{% trans "Title" %}</th>
+					<th>{% trans "Type" %}</th>
+					<th>{% trans "Date" %}</th>
+					<th>{% trans "Admin" %}</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for improvement in improvements %}
+				<tr>
+					<td>{{improvement.title}}</td>
+					<td>{{improvement.get_mode_display}}</td>
+					<td>{{improvement.date}}</td>
+					<td><a href="{% url 'plugins:barman_improvements:improvements-detail' improvement.pk %}"
+							class="button small"><i class="fa fa-eye"></i> {% trans "See" %}</a> <a
+							href="{% url 'plugins:barman_improvements:improvements-delete' improvement.pk %}"
+							class="button small"><i class="fa fa-trash"></i> {% trans "Delete" %}</a></td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+</section>
+{% endblock %}

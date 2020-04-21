@@ -1,0 +1,174 @@
+# barman-improvements - plugin for barman
+# Copyright © 2020 Yoann Pietri <me@nanoy.fr>
+#
+# barman-improvements is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# barman-improvements is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with barman-improvements.  If not, see <https://www.gnu.org/licenses/>.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: barman-improvements\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-21 12:34+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Yoann Pietri <me@nanoy.fr>\n"
+"Language-Team: \n"
+"Language: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: __init__.py:29
+msgid "Add an improvement form"
+msgstr "Ajoute un formulaire d'amélioration"
+
+#: __init__.py:37
+msgid "Submit improvement"
+msgstr "Proposer une amélioration"
+
+#: __init__.py:46
+msgid "See improvements"
+msgstr "Voir les propositions d'améliorations"
+
+#: __init__.py:60
+msgid "Store improvements in database."
+msgstr "Sauvegarder les améliorations en base de données."
+
+#: __init__.py:66
+msgid ""
+"Recipients of improvement email. If set None or empty array, no email is "
+"sent."
+msgstr ""
+"Destinaire du mail d'amélioration. Si None ou une liste vide, aucun email "
+"n'est envoyé."
+
+#: models.py:34
+msgid "Bug"
+msgstr "Bug"
+
+#: models.py:35 templates/barman_improvements/improvement_profile.html:3
+msgid "Improvement"
+msgstr "Amélioration"
+
+#: models.py:36
+msgid "New feature"
+msgstr "Nouvelle fonctionnalité"
+
+#: models.py:40
+msgid "improvement"
+msgstr "proposition d'amélioration"
+
+#: models.py:41
+msgid "improvements"
+msgstr "propositions d'améliorations"
+
+#: models.py:43
+msgid "title"
+msgstr "titre"
+
+#: models.py:44
+msgid "type"
+msgstr "type"
+
+#: models.py:50
+msgid "barman"
+msgstr "barman"
+
+#: models.py:52
+msgid "date"
+msgstr "date"
+
+#: templates/barman_improvements/improvement_profile.html:15
+msgid "Back to list of improvements"
+msgstr "Retour à la liste des propositions"
+
+#: templates/barman_improvements/improvement_profile.html:16
+#: templates/barman_improvements/improvements_index.html:18
+msgid "Title"
+msgstr "Titre"
+
+#: templates/barman_improvements/improvement_profile.html:17
+#: templates/barman_improvements/improvements_index.html:19
+msgid "Type"
+msgstr "Type"
+
+#: templates/barman_improvements/improvement_profile.html:18
+#: templates/barman_improvements/improvements_index.html:20
+msgid "Date"
+msgstr "Date"
+
+#: templates/barman_improvements/improvement_profile.html:19
+msgid "Barman"
+msgstr "Barman"
+
+#: templates/barman_improvements/improvement_profile.html:20
+msgid "Description"
+msgstr "Description"
+
+#: templates/barman_improvements/improvements_index.html:3
+#: templates/barman_improvements/improvements_index.html:6
+#: templates/barman_improvements/improvements_index.html:12
+msgid "Improvements"
+msgstr "Améliorations"
+
+#: templates/barman_improvements/improvements_index.html:21
+msgid "Admin"
+msgstr "Admin"
+
+#: templates/barman_improvements/improvements_index.html:31
+msgid "See"
+msgstr "Voir"
+
+#: templates/barman_improvements/improvements_index.html:33
+msgid "Delete"
+msgstr "Supprimer"
+
+#: views.py:50
+#, python-brace-format
+msgid ""
+"\n"
+"            A new improvement proposal was sent : {title}, {mode}.\n"
+"\n"
+"            Description :\n"
+"\n"
+"            {description}\n"
+"            "
+msgstr ""
+"\n"
+"            Une nouvelle proposition d'amélioration a été soumise : {title}, {mode}.\n"
+"\n"
+"            Description :\n"
+"\n"
+"            {description}\n"
+"            "
+
+#: views.py:60
+msgid "New improvement proposal"
+msgstr "Nouvelle proposition d'amélioration"
+
+#: views.py:71
+msgid "Improvement proposal has been sent."
+msgstr "La propoisation a été envoyée"
+
+#: views.py:78
+msgid "Improvement proposal"
+msgstr "Proposition d'amélioration"
+
+#: views.py:79
+msgid "Send"
+msgstr "Envoyer"
+
+#: views.py:125
+msgid "Improvement was deleted."
+msgstr "La proposition a été supprimée."

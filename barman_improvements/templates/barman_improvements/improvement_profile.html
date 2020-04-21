@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block entete %}{% trans "Improvement" %} {{improvement.title}}{% endblock %}
+{% block navbar %}
+<ul>
+    <li><a href="#first">{{improvement.title}}</a></li>
+</ul>
+{% endblock %}
+{% block content %}
+<section id="first" class="main">
+    <header class="major">
+        <h2>{{improvement.title}}</h2>
+    </header>
+    <a href="{% url 'plugins:barman_improvements:improvements-index' %}" class="button small"><i
+            class="fa fa-reply"></i> {% trans "Back to list of improvements" %}</a><br><br>
+    <strong>{% trans "Title" %} : </strong> {{improvement.title}}<br>
+    <strong>{% trans "Type" %} : </strong> {{improvement.get_mode_display}}<br>
+    <strong>{% trans "Date" %} : </strong> {{improvement.date}}<br>
+    <strong>{% trans "Barman" %} : </strong> {{improvement.barman}}<br>
+    <strong>{% trans "Description" %} : </strong> {{improvement.description}}<br>
+</section>
+{% endblock %}
